@@ -50,7 +50,9 @@
        "S" => 5,
        "Z"=> 2
     );
-    
+
+    // array_map(関数, 配列)の形で使う。このとき、第二引数の配列の要素を一つずつ取得して、第一引数の関数を実行さ背ていく。
+
     $new_target = array_map(function($n) use ($list) {
        return $list[$n] ?? $n;
     }, $new_target);
